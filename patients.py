@@ -11,7 +11,7 @@ press=st.sidebar.selectbox('Page Number',['Page 1','Page 2','Page 3','Page 4','P
 if press=='Page 1':
     st.title("MEDICAL APPOINTMENT NO SHOWS")
     st.subheader("Data Source: JoniHoppen from Kaggle")
-    st.info("Hello! I'm Nafisyah. Your Consultant")
+    st.info("Hello! I'm Nafisyah. Your Consultant,Nice Meet You.")
     st.info("I utilized this dataset for my assignment to analyze whether or not a patient is going to attended for the medical appointment.")
 
 elif press=='Page 2':
