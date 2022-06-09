@@ -11,7 +11,7 @@ press=st.sidebar.selectbox('Page Number',['Page 1','Page 2','Page 3','Page 4','P
 if press=='Page 1':
     st.title("MEDICAL APPOINTMENT NO SHOWS")
     st.subheader("Data Source: JoniHoppen from Kaggle")
-    st.info("Hello! I'm Najihah.")
+    st.info("Hello! I'm Nafisyah. Your Consultant")
     st.info("I utilized this dataset for my assignment to analyze whether or not a patient is going to attended for the medical appointment.")
 
 elif press=='Page 2':
@@ -28,7 +28,7 @@ elif press=='Page 2':
         bar.progress(i + 1)
         time.sleep(0.05)
         
-    record=pd.read_csv("C:/Users/user10/Desktop/Patient Appointment.csv")
+    record=pd.read_csv("https://github.com/Syahirah2297/final_task/blob/main/KaggleV2-May-2016.csv")
     remove=["PatientId","ScheduledDay","AppointmentDay"]
     record.drop(remove, inplace=True, axis=1)
     record.rename(columns={'Hipertension':'Hypertension', 'Handcap':'Handicapped','SMS_received':'Notification(SMS)','No-show':'Attended'},inplace=True)
